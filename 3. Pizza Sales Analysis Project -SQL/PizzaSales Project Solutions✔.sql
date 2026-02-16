@@ -1,15 +1,20 @@
 
-
+                               ==>> PizzaSales Project Solutions 
+                                      
 
 # ==>>> Retrieve the total number of orders placed
+                                      
 
 Select Count(order_id) as Total_Orders From orders;
 
+
 # ==>>> Calculate the total revenue generated from pizza sales
+       
 
 SELECT SUM(order_details.quantity * pizzas.price) AS Total_Sales
 FROM order_details INNER JOIN pizzas
 ON pizzas.pizza_id=order_details.pizza_id;
+
 
 # ==>>> Identify the highest-priced pizza
 
